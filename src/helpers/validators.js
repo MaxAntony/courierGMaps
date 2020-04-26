@@ -14,4 +14,11 @@ validate.phone = phone => {
   return false;
 };
 
+validate.numberLength = (number, length) => {
+  if (String(number).length == length) {
+    return true;
+  }
+  return false;
+};
+
 module.exports = validate;
